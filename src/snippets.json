@@ -1,0 +1,12 @@
+{
+	"1508-vuejs-avanzado/18072-creacion-y-configuracion-inicial-del-proyecto-util/": {
+		"1:40": {
+			"text": "npm i -g vue-cli",
+			"action": "clipboard"
+		},
+		"3:00": {
+			"text": "https://example.com",
+			"action": "open-link"
+		}
+	}
+}

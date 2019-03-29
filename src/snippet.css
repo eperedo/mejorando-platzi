@@ -1,0 +1,22 @@
+#btn-paste {
+	cursor: pointer;
+}
+
+.dialog-container {
+	padding: 5px;
+}
+
+.code {
+	padding: 10px;
+}
+
+.snippet-container {
+	align-items: center;
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+}
