@@ -1,0 +1,51 @@
+<!DOCTYPE >
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>Mejorando Platzi - Documentation</title>
+		<link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
+	</head>
+	<body>
+		<div id="docute"></div>
+		<script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+		<script>
+			new Docute({
+				nav: [
+					{
+						title: 'Home',
+						link: '/',
+					},
+					{
+						title: 'Chrome Store',
+						link: 'https://mp.chrome.com',
+					},
+					{
+						title: 'Github',
+						link: 'https://github.com/eperedo/mejorando-platzi',
+					},
+				],
+				sidebar: [
+					{
+						title: 'Guide', // Optional
+						links: [
+							{
+								title: 'Getting Started',
+								link: '/guide/getting-started',
+							},
+							{
+								title: 'Snippets',
+								link: '/guide/snippets',
+							},
+						],
+					},
+				],
+				target: '#docute',
+				title: 'Mejorando Platzi',
+			});
+		</script>
+	</body>
+</html>

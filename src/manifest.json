@@ -11,9 +11,14 @@
 	],
 	"web_accessible_resources": ["static/copy.svg"],
 	"short_name": "MP",
+	"icons": {
+		"16": "icons/16.png",
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+	},
 	"version": "0.0.1",
 	"description": "Un conjunto de mejoras para platzi.com",
 	"author": "Eduardo P. Rivero <jrperedo@gmail.com> (https://blog.eperedo.com/)",
-	"homepage_url": "https://mejorandoplatzi.netlify.com",
+	"homepage_url": "https://mejorando-platzi.netlify.com",
 	"manifest_version": 2
 }
