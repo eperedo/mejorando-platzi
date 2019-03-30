@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mejorando Platzi - Options</title>
+		<link href="options.css" rel="stylesheet" />
+	</head>
+	<body>
+		<section class="wrapper">
+			<dialog id="notify-container">
+				<div id="notification"></div>
+			</dialog>
+			<header>
+				<h1>Mejorando Platzi - Options</h1>
+			</header>
+			<form class="form-options" id="form-options">
+				<div class="control-container">
+					<label class="control-label" for="file">Snippet File</label>
+					<input
+						class="control-input"
+						id="file"
+						accept="application/json"
+						type="file"
+						required
+					/>
+				</div>
+				<div class="control-container">
+					<button id="btn-settings" class="btn" type="submit">
+						Save
+					</button>
+				</div>
+			</form>
+		</section>
+		<script src="./index.js"></script>
+	</body>
+</html>

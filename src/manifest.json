@@ -1,16 +1,17 @@
 {
 	"name": "Mejorando Platzi",
+	"permissions": ["storage"],
+	"options_page": "options/index.html",
 	"content_scripts": [
 		{
 			"matches": ["https://platzi.com/*"],
 			"css": ["snippet.css"],
-			"js": ["snippet.js"]
+			"js": ["snippet.js", "course.js"]
 		}
 	],
-	"permissions": ["storage"],
 	"web_accessible_resources": ["static/copy.svg"],
 	"short_name": "MP",
-	"version": "1.0",
+	"version": "0.0.1",
 	"description": "Un conjunto de mejoras para platzi.com",
 	"author": "Eduardo P. Rivero <jrperedo@gmail.com> (https://blog.eperedo.com/)",
 	"homepage_url": "https://mejorandoplatzi.netlify.com",

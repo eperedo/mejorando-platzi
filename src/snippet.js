@@ -4,9 +4,8 @@ const videoEl = document.querySelector('#videojs-player');
 const timeouId = null;
 let snippetData = null;
 
-chrome.storage.sync.get('snippets', data => {
-	console.log('Snippets from storage:', data);
-	snippetData = data;
+chrome.storage.sync.get(['settings', 'snippets'], ({ snippets }) => {
+	snippetData = snippets;
 	createObserver();
 });
 
@@ -70,6 +69,7 @@ function createDialog({ text, action }) {
 			<code class="code">
 				${link}
 			</code>
+			<span style="display:none" id="copied-msg">Copied</span>
 			<button type="button" id="btn-paste"></button>
 		</section>
 	`;
@@ -82,6 +82,9 @@ function createDialog({ text, action }) {
 	const btn = el.querySelector('#btn-paste');
 	btn.appendChild(createIcon(copyIcon));
 	btn.addEventListener('click', () => {
+		const spanEl = document.querySelector('span#copied-msg');
+		spanEl.textContent = 'Copied!';
+		spanEl.style.display = 'inline';
 		const input = document.createElement('input');
 		input.value = text;
 		input.style.opacity = 0;
@@ -96,5 +99,3 @@ function createDialog({ text, action }) {
 		el.remove();
 	}, 5000);
 }
-
-// createObserver();

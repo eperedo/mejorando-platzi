@@ -1,0 +1,69 @@
+{
+	"1050-programacion-basica/5103-bienvenidos/": {
+		"0:18": {
+			"text": "about:blank",
+			"action": "clipboard"
+		},
+		"0:48": {
+			"text": "alert('Mi nombre es Freddy');",
+			"action": "clipboard"
+		},
+		"1:13": {
+			"text": "var nombre = Freddy;",
+			"action": "clipboard"
+		},
+		"1:47": {
+			"text": "alert('Mi nombre es ' + nombre)",
+			"action": "clipboard"
+		},
+		"2:47": {
+			"text": "nombre = prompt('Cual es tu nombre?')",
+			"action": "clipboard"
+		},
+		"3:31": {
+			"text": "https://atom.io/",
+			"action": "link"
+		}
+	},
+	"1508-vuejs-avanzado/18072-creacion-y-configuracion-inicial-del-proyecto-util/": {
+		"0:57": { "text": "yarn global add @vue/cli", "action": "clipboard" },
+		"1:10": {
+			"text": "https://cli.vuejs.org/#getting-started",
+			"action": "link"
+		},
+		"1:40": { "text": "npm i -g vue-cli", "action": "clipboard" },
+		"2:27": { "text": "vue create platzi-rooms", "action": "clipboard" },
+		"7:09": { "text": "yarn serve", "action": "clipboard" },
+		"7:23": { "text": "http://localhost:8080", "action": "link" }
+	},
+	"1508-vuejs-avanzado/18071-configuracion-del-proyecto-y-limpieza/": {
+		"3:59": { "text": "yarn install", "action": "clipboard" }
+	},
+	"1508-vuejs-avanzado/18073-preparando-nuestro-entorno-para-un-prototipo/": {
+		"0:28": {
+			"text": "https://cli.vuejs.org/guide/prototyping.html",
+			"action": "link"
+		},
+		"0:57": {
+			"text": "yarn global add @vue/cli-service-global",
+			"action": "clipboard"
+		},
+		"2:46": {
+			"text": "vue serve App.vue",
+			"action": "clipboard"
+		},
+		"3:06": {
+			"text": "http://localhost:8080",
+			"action": "link"
+		}
+	},
+	"1508-vuejs-avanzado/18113-creando-y-desplegando-nuestra-app-en-heroku/": {
+		"": {
+			"text": "https://heroku.com",
+			"action": "link"
+		}
+	},
+	"1432-docker/15423-instalacion-de-docker5237/": {
+		"02:43": { "text": "docker --version", "action": "clipboard" }
+	}
+}
