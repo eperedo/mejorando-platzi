@@ -103,7 +103,7 @@ It will open the options page where you can select your json snippet file, then 
 
 Now We can go to the video and according the json we have just created those 3 snippets will arise just in time!
 
-Snippet at 08:00
+Snippet at 0:18
 ![Mejorando Platzi - Snippet Video](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981197/mejorando-platzi/mp-video-1.gif)
 
 Snippet at 0:48
