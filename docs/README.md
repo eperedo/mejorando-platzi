@@ -1,12 +1,14 @@
 Mejorando Platzi
 
-> A set of improvements for the [platzi.com](https://platzi.com) platform
+> Un conjunto de mejoras para [platzi.com](https://platzi.com)
 
-### Features
+### Mejoras
 
-- Display the total time of the courses
-- Add your own in-video snippets
+- Muestra la duración total de los cursos
+- Permite agregar snippets de código a los videos
 
-### Installation
+### Instalación
 
-Get the latest version from the [chrome store](https://chrome.google.com/webstore/detail/fmajabjciiepkmkhbclpekpoidfkgjnd/publish-accepted?authuser=0&hl=es-419)
+Descarga e instala la última versión de Mejorando Platzi desde la [chrome store](https://chrome.google.com/webstore/detail/mejorando-platzi/fmajabjciiepkmkhbclpekpoidfkgjnd)
+
+![Mejorando Platzi - Snippet Video](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981197/mejorando-platzi/mp-video-2.gif)

@@ -1,42 +1,39 @@
 # Snippets
 
 <Note type="warning">
-You will need basic knowledge about how to create a json file.
+Se necesita conocimientos básicos de como crear un archivo json
 </Note>
 
-## Creating your own snippets
+## Crear tus propios snippets
 
-Mejorando Platzi gives you the power to add your own in-video-snippets with a simple json configuration.
+Mejorando Platzi te da el poder de agregar tus propios snippets dentro de los videos con un simple archivo json.
 
-First We need to identify the video where We want to display the snippets.
+Primero necesitamos identificar el video donde queremos mostrar los snippets.
 
-In this guide We will use the course [Programación Básica](https://platzi.com/clases/1050-programacion-basica/5103-bienvenidos/) as example.
+En esta guía vamos a usar el curso [Programación Básica](https://platzi.com/clases/1050-programacion-basica/5103-bienvenidos/) como ejemplo.
 
-The url of this video is:
+La url del video es:
 
 ```
 https://platzi.com/clases/1050-programacion-basica/5103-bienvenidos/
 ```
 
-First we need the ID of the video, but how in the hell will I know the ID? Well that's simple.
-
-Urls are the unique identifier for snippets, but not the whole url. Since there's part of the url that always will be the same for all the videos We will exclude **https://platzi.com/clases/**.
-
-So in this case the ID is:
+Las urls son los identificadores para los snippets, pero no toda la url. Ya que hay partes de la url que siempre van a ser iguales para todos los videos excluiremos **https://platzi.com/clases/** para tener el identificador.
+Asi que en este caso el identificador del video es:
 
 ```
 1050-programacion-basica/5103-bienvenidos/
 ```
 
-Now that we have the ID of the video Let's say we need to display three snippets.
+Ahora que tenemos el identificador del video vamos a agregar 3 snippets al video
 
 ```
-at second 0:18 the text "about:blank"
-at second 0:48 the text "alert('Mi nombre es Freddy');"
-at second 3:31 the link "https://atom.io/"
+al minuto 0:18 el código "about:blank"
+al minuto 0:48 el código "alert('Mi nombre es Freddy');"
+al minuto 3:31 el link "https://atom.io/"
 ```
 
-In order to accomplished that we will need the following json:
+Para poder lograr esto vamos a necesitar el siguiente archivo json:
 
 ```json
 {
@@ -57,12 +54,12 @@ In order to accomplished that we will need the following json:
 }
 ```
 
-The json file include at the very top the ID of the video, then we can start adding snippets. A snippet always will need: the time which represent the very moment where it will be displayed. A text which will be printed on the screen and an action. For the moment the extension only support two types of actions: clipboard and link.
+El archivo json incluye en la parte superior el identificador del video, luego podemos comenzar a agregar snippets. Un snippet siempre necesitará: **el tiempo** que representa el momento en el que se mostrará. **Un texto** que se mostrará en la pantalla y **una acción**, por el momento la extensión solo admite **dos tipos de acciones**: **clipboard** y **link**.
 
-The first action gives the ability to copy the text to the clipboard in one click.
-The **link** action will display the text inside an html **a** tag so it will be clickable and open that link in your browser.
+La primera acción permite copiar el texto en el portapapeles con un solo click.
+La acción **link** mostrará el texto dentro de una etiqueta html **a**, y al hacer click se abrirá una nueva pestaña con el link configurado.
 
-What about other videos? Well the process is pretty much the same. You can get the ID of the other video and add it to your existing json file.
+¿Qué pasa si quiero snippets en otros videos? Bueno, el proceso es prácticamente el mismo. Puede obtener el identificador del otro video y agregarlo al archivo json existente.
 
 ```json
 {
@@ -89,25 +86,25 @@ What about other videos? Well the process is pretty much the same. You can get t
 }
 ```
 
-Ok, we have the json file, now we need to upload it to the extension.
+Ok, ahora guardamos el archivo json en algún lugar en nuestro disco y lo subimos en las opciones de la extensión.
 
-## Uploading the file to the extension
+## Subir el archivo a la extensión
 
-If you already [have installed the extension](/guide/getting-started) you can right click on the extension's icon and select the **Options** menu.
+Si ya tienes instalada la [extension](/getting-started) haz click derecho sobre el ícono de la extensión y seleccionar el menú **Opciones**
 
 ![Mejorando Platzi Options Menu](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981775/mejorando-platzi/mp-doc-1.png)
 
-It will open the options page where you can select your json snippet file, then click the **Save** button and that's it.
+Se abrirá la página de opciones donde puedes elegir el json que acabamos de crear, luego hacemos click sobre el botón **Guardar** y eso es todo, debe aparecer un mensaje indicando que se grabaron los cambios correctamente.
 
 ![Mejorando Platzi Options Page](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981852/mejorando-platzi/mp-doc-2.png)
 
-Now We can go to the video and according the json we have just created those 3 snippets will arise just in time!
+Ahora podemos ir al video y según lo que configuramos en el archivo json se van a mostrar 3 snippets:
 
-Snippet at 0:18
+Snippet en el minuto 0:18
 ![Mejorando Platzi - Snippet Video](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981197/mejorando-platzi/mp-video-1.gif)
 
-Snippet at 0:48
+Snippet en el minuto 0:48
 ![Mejorando Platzi - Snippet Video](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981197/mejorando-platzi/mp-video-2.gif)
 
-Snippet at 3:31
+Snippet en el minuto 3:31
 ![Mejorando Platzi - Snippet Video](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981197/mejorando-platzi/mp-video-3.gif)

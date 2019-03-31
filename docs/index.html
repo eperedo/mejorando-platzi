@@ -6,7 +6,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<title>Mejorando Platzi - Documentation</title>
+		<title>Mejorando Platzi</title>
 		<link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
 	</head>
 	<body>
@@ -14,6 +14,44 @@
 		<script src="https://unpkg.com/docute@4/dist/docute.js"></script>
 		<script>
 			new Docute({
+				overrides: {
+					'/': {
+						language: 'Español',
+					},
+					'/en/': {
+						language: 'English',
+						nav: [
+							{
+								title: 'Home',
+								link: '/en/',
+							},
+							{
+								title: 'Chrome Store',
+								link:
+									'https://chrome.google.com/webstore/detail/mejorando-platzi/fmajabjciiepkmkhbclpekpoidfkgjnd',
+							},
+							{
+								title: 'Github',
+								link: 'https://github.com/eperedo/mejorando-platzi',
+							},
+						],
+						sidebar: [
+							{
+								title: 'Guide',
+								links: [
+									{
+										title: 'Getting Started',
+										link: '/en/guide/getting-started',
+									},
+									{
+										title: 'Snippets',
+										link: '/en/guide/snippets',
+									},
+								],
+							},
+						],
+					},
+				},
 				nav: [
 					{
 						title: 'Home',
@@ -21,7 +59,8 @@
 					},
 					{
 						title: 'Chrome Store',
-						link: 'https://mp.chrome.com',
+						link:
+							'https://chrome.google.com/webstore/detail/mejorando-platzi/fmajabjciiepkmkhbclpekpoidfkgjnd/related?hl=es-419&authuser=0',
 					},
 					{
 						title: 'Github',
@@ -30,10 +69,10 @@
 				],
 				sidebar: [
 					{
-						title: 'Guide', // Optional
+						title: 'Guía', // Optional
 						links: [
 							{
-								title: 'Getting Started',
+								title: 'Instalación',
 								link: '/guide/getting-started',
 							},
 							{
