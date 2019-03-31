@@ -9,4 +9,4 @@ Mejorando Platzi
 
 ### Installation
 
-Get the latest version from the [chrome store](https://mp.chrome.com)
+Get the latest version from the [chrome store](https://chrome.google.com/webstore/detail/fmajabjciiepkmkhbclpekpoidfkgjnd/publish-accepted?authuser=0&hl=es-419)

@@ -1,7 +1,7 @@
 # Getting Started
 
-Install Mejorando Platzi is so easy it hurts, just go to the [chrome store](https://mp.chrome.com) and click on the Add button.
+Install Mejorando Platzi is so easy it hurts, just go to the [chrome store](https://chrome.google.com/webstore/detail/fmajabjciiepkmkhbclpekpoidfkgjnd/publish-accepted?authuser=0&hl=es-419) and click on the Add button.
 
 ```
-[https://mp.chrome.com](https://mp.chrome.com)
+[https://chrome.google.com/webstore/detail/fmajabjciiepkmkhbclpekpoidfkgjnd/publish-accepted?authuser=0&hl=es-419](https://chrome.google.com/webstore/detail/fmajabjciiepkmkhbclpekpoidfkgjnd/publish-accepted?authuser=0&hl=es-419)
 ```
