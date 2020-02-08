@@ -1,24 +1,30 @@
-const title = document.querySelector('h2.CourseBanner-title');
+const title = document.querySelector('h1.CourseDetail-left-title');
 
 if (title) {
-	const durations = document.querySelectorAll('.MaterialContent-duration');
+	const durations = document.querySelectorAll('.MaterialItem-copy-time');
 	const totalMinutes = getMinutesFromVideos(durations);
 	const totalHours = totalMinutes / 60;
 	const linkTitle = document.createElement('a');
-	linkTitle.textContent = ` - ${totalHours.toFixed(2)} h`;
+	linkTitle.textContent = ` ${totalHours.toFixed(2)} h`;
 	linkTitle.href = '#';
-	linkTitle.title = `${totalMinutes} minutes`;
+	linkTitle.title = `${totalMinutes.toFixed(2)} minutes`;
 	linkTitle.classList.add('title-hours');
 	title.appendChild(linkTitle);
 }
 
 function getMinutesFromVideos(durations) {
-	let total = 0;
+	let totalMinutes = 0;
+	let totalSeconds = 0;
 	durations.forEach(item => {
-		const currentItem = item.textContent.split(':')[0];
-		if (!isNaN(currentItem)) {
-			total += Number(currentItem);
+		const currentItem = item.textContent.split(':');
+		const minute = currentItem[0];
+		const second = currentItem[1].split(' min')[0];
+		if (!isNaN(minute)) {
+			totalMinutes += Number(minute);
+		}
+		if (!isNaN(second)) {
+			totalSeconds += Number(second);
 		}
 	});
-	return total;
+	return totalMinutes + totalSeconds / 60;
 }
