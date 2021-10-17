@@ -1,0 +1,32 @@
+.TutorialsPages {
+	padding: 1rem;
+}
+
+.TutorialMejorandoPlatzi {
+	text-decoration: none;
+}
+
+.TutorialAvatar {
+	vertical-align: middle;
+}
+
+.mj-btn-page {
+	background-color: #fff;
+	border-radius: 10px;
+	border: none;
+	color: #0791e6;
+	cursor: pointer;
+	margin-right: 5px;
+	min-width: 30px;
+	padding: 5px;
+}
+
+.mj-btn-page.active {
+	color: #fff;
+	background-color: #0791e6;
+}
+
+.mj-btn-page:disabled {
+	cursor: not-allowed;
+	opacity: 0.6;
+}

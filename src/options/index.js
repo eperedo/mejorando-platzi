@@ -1,5 +1,8 @@
 const form = document.querySelector('form#form-options');
 const btn = document.querySelector('button.btn');
+const lightCourseDom = form.querySelector('input#enableLightMode');
+
+btn.setAttribute('disabled', true);
 
 function showMessage(text, type = 'success') {
 	document.querySelector('dialog#notify-container').open = true;
@@ -11,28 +14,22 @@ function showMessage(text, type = 'success') {
 	}, 3000);
 }
 
-form.addEventListener('submit', e => {
+chrome.storage.sync.get(['enableLightMode'], (values) => {
+	lightCourseDom.checked = values.enableLightMode;
+	btn.removeAttribute('disabled');
+});
+
+form.addEventListener('submit', (e) => {
 	btn.setAttribute('disabled', true);
 	e.preventDefault();
-	const fileInput = form.querySelector('input#file');
-	const file = fileInput.files[0];
-	if (file && file.type == 'application/json') {
-		let reader = new FileReader();
-		reader.readAsText(file, 'utf-8');
-		reader.addEventListener('load', () => {
-			try {
-				const snippets = JSON.parse(reader.result);
-				chrome.storage.sync.set({ snippets }, () => {
-					showMessage('Options saved!');
-					btn.removeAttribute('disabled');
-				});
-			} catch (error) {
-				showMessage(error.message, 'error');
-				throw error;
-			} finally {
-				reader = null;
-				form.reset();
-			}
+	const enableLightMode = lightCourseDom.checked;
+	try {
+		chrome.storage.sync.set({ enableLightMode }, () => {
+			showMessage('Options saved!');
+			btn.removeAttribute('disabled');
 		});
+	} catch (error) {
+		showMessage(error.message, 'error');
+		throw error;
 	}
 });
