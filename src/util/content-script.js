@@ -5,5 +5,11 @@ function injectScript(file, node) {
 	s.setAttribute('src', file);
 	th.appendChild(s);
 }
-injectScript(chrome.extension.getURL('tut.js'), 'body');
-injectScript(chrome.extension.getURL('stories.js'), 'body');
+
+function injectCss(file, node) {
+	var th = document.getElementsByTagName(node)[0];
+	var s = document.createElement('link');
+	s.setAttribute('rel', 'stylesheet');
+	s.setAttribute('href', file);
+	th.appendChild(s);
+}

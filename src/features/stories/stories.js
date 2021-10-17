@@ -1,12 +1,3 @@
-chrome.storage.sync.get(
-	['enableStoriesProfile'],
-	({ enableStoriesProfile }) => {
-		if (enableStoriesProfile) {
-			renderStories();
-		}
-	},
-);
-
 function renderStories() {
 	const isProfilePage = window.location.pathname.includes('/p/');
 	const imgDom = document.querySelector('img.Layout--radius');
@@ -177,3 +168,5 @@ function renderStories() {
 		}
 	}
 }
+
+renderStories();

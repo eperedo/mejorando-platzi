@@ -1,8 +1,9 @@
 const form = document.querySelector('form#form-options');
 const btn = document.querySelector('button.btn');
 const lightCourseDom = form.querySelector('input#enableLightMode');
-
-btn.setAttribute('disabled', true);
+const enableStoriesProfileDom = form.querySelector(
+	'input#enableStoriesProfile',
+);
 
 function showMessage(text, type = 'success') {
 	document.querySelector('dialog#notify-container').open = true;
@@ -14,17 +15,22 @@ function showMessage(text, type = 'success') {
 	}, 3000);
 }
 
-chrome.storage.sync.get(['enableLightMode'], (values) => {
-	lightCourseDom.checked = values.enableLightMode;
-	btn.removeAttribute('disabled');
-});
+chrome.storage.sync.get(
+	['enableLightMode', 'enableStoriesProfile'],
+	(values) => {
+		lightCourseDom.checked = values.enableLightMode;
+		enableStoriesProfileDom.checked = values.enableStoriesProfile;
+		btn.removeAttribute('disabled');
+	},
+);
 
 form.addEventListener('submit', (e) => {
 	btn.setAttribute('disabled', true);
 	e.preventDefault();
 	const enableLightMode = lightCourseDom.checked;
+	const enableStoriesProfile = enableStoriesProfileDom.checked;
 	try {
-		chrome.storage.sync.set({ enableLightMode }, () => {
+		chrome.storage.sync.set({ enableLightMode, enableStoriesProfile }, () => {
 			showMessage('Options saved!');
 			btn.removeAttribute('disabled');
 		});

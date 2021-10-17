@@ -5,11 +5,33 @@
 	"content_scripts": [
 		{
 			"matches": ["https://platzi.com/*"],
-			"css": ["snippet.css", "tutorial.css", "stories.css"],
-			"js": ["invert.js", "course.js", "tutorial.js"]
+			"js": ["util/content-script.js"]
+		},
+		{
+			"matches": ["https://platzi.com/p/*"],
+			"js": ["features/stories/content-script.js"]
+		},
+		{
+			"exclude_matches": ["https://platzi.com/p/*"],
+			"matches": ["https://platzi.com/*"],
+			"js": ["features/light-mode/content-script.js"]
+		},
+		{
+			"matches": ["https://platzi.com/clases/*"],
+			"js": ["features/tutorial-pagination/content-script.js"]
 		}
 	],
-	"web_accessible_resources": ["static/copy.svg", "static/close.svg", "tut.js", "stories.js"],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"static/close.svg",
+				"features/stories/*",
+				"features/light-mode/*",
+				"features/tutorial-pagination/*"
+			],
+			"matches": ["https://platzi.com/*"]
+		}
+	],
 	"short_name": "MP",
 	"icons": {
 		"16": "icons/16.png",
@@ -20,5 +42,5 @@
 	"description": "Un conjunto de mejoras para platzi.com",
 	"author": "Eduardo P. Rivero <jrperedo@gmail.com> (https://blog.eperedo.com/)",
 	"homepage_url": "https://mejorando-platzi.netlify.com",
-	"manifest_version": 2
+	"manifest_version": 3
 }

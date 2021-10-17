@@ -4,8 +4,13 @@ Mejorando Platzi
 
 ### Mejoras
 
-- Muestra la duración total de los cursos
-- Permite agregar snippets de código a los videos
+A medida platzi implemente las mejoras serán eliminadas de la extensión
+
+- Muestra la duración total de los cursos (eliminado)
+- Permite agregar snippets de código a los videos (eliminado)
+- Revertir modo oscuro
+- Mostrar carreras aprobadas como stories en perfil
+- Mostrar paginación en tutoriales de cada curso
 
 ### Instalación
 
