@@ -1,4 +1,4 @@
-# Snippets
+# Snippets (ELIMINADO DEBIDO A QUE PLATZI MODIFICO SU VIDEO PLAYER)
 
 <Note type="warning">
 Se necesita conocimientos básicos de como crear un archivo json

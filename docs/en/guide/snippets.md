@@ -1,7 +1,7 @@
-# Snippets
+# Snippets (DEPRECATED)
 
 <Note type="warning">
-You will need basic knowledge about how to create a json file.
+It's not working anymore since platzi change its video player
 </Note>
 
 ## Creating your own snippets

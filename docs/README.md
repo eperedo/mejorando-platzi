@@ -16,4 +16,14 @@ A medida platzi implemente las mejoras serán eliminadas de la extensión
 
 Descarga e instala la última versión de Mejorando Platzi desde la [chrome store](https://chrome.google.com/webstore/detail/mejorando-platzi/fmajabjciiepkmkhbclpekpoidfkgjnd)
 
-![Mejorando Platzi - Snippet Video](https://res.cloudinary.com/drukp4ipu/image/upload/v1553981197/mejorando-platzi/mp-video-2.gif)
+### Light Mode
+
+![Mejorando Platzi - Light Mode](https://res.cloudinary.com/drukp4ipu/image/upload/v1617679461/mejorando-platzi/platzi_invert.png)
+
+### Paginación en tutoriales
+
+![Mejorando Platzi - Paginación en tutoriales](https://res.cloudinary.com/drukp4ipu/image/upload/v1634504192/mejorando-platzi/tutorial-pagination/platzi_tutorial_pagination.png)
+
+### Stories para las carreras aprobadas en el perfil
+
+![Mejorando Platzi - Stories en perfil](https://res.cloudinary.com/drukp4ipu/image/upload/v1634504436/mejorando-platzi/stories/platzi_stories.png)
