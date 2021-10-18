@@ -11,10 +11,15 @@ A medida platzi implemente las mejoras serán eliminadas de la extensión
 - Revertir modo oscuro
 - Mostrar carreras aprobadas como stories en perfil
 - Mostrar paginación en tutoriales de cada curso
+- X-RAY, mostrar información detallada de cada profesor
 
 ### Instalación
 
 Descarga e instala la última versión de Mejorando Platzi desde la [chrome store](https://chrome.google.com/webstore/detail/mejorando-platzi/fmajabjciiepkmkhbclpekpoidfkgjnd)
+
+### X-RAY para información de los profesores
+
+![Estefany Aguilar](https://res.cloudinary.com/drukp4ipu/image/upload/v1634525375/mejorando-platzi/xray/xray1.gif)
 
 ### Light Mode
 
