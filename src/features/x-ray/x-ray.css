@@ -1,0 +1,135 @@
+.Header-course-info-content p {
+	cursor: pointer;
+}
+
+.Header-course-info-content p:hover {
+	text-decoration: underline;
+}
+
+:root {
+	--xrayDark: #000;
+	--xrayLight: #fff;
+	--xrayBlue: #33b1ff;
+	--xrayButtonActive: #33b1ff;
+	--xrayButton: #637b9d;
+	--xrayPadding: 0.8em;
+	--xrayGreen: #95ca3e;
+	--xrayGray1: #eff3f8;
+	--xrayGray2: #24385b;
+}
+
+.xray-close {
+	background-color: transparent;
+	border: none;
+	color: var(--xrayLight);
+	cursor: pointer;
+	font-size: 3em;
+	position: absolute;
+	right: 1em;
+	top: 0;
+}
+
+.xray-container {
+	height: 100%;
+	overflow: auto;
+	padding: 0 var(--xrayPadding);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 99999999999999999;
+}
+
+.VideoPlayerOpacity {
+	opacity: 0.2;
+}
+
+.xray-header h2 {
+	font-size: 2em;
+	padding: var(--xrayPadding) 0;
+}
+
+.xray-header a {
+	color: var(--xrayGray1);
+}
+
+.tab-groups {
+	display: flex;
+	column-gap: 1em;
+}
+
+.tab-groups button {
+	background-color: var(--xrayButton);
+	border: none;
+	border-radius: 1em;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5em;
+	padding: var(--xrayPadding);
+}
+
+.tab-groups button:hover {
+	background-color: #74caff;
+}
+
+.tab-groups button.active {
+	background-color: var(--xrayButtonActive);
+}
+
+.xray-tab-content-item {
+	display: none;
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+.xray-tab-content-item.active {
+	display: block;
+}
+
+.xray-tab-content-item {
+	padding: var(--xrayPadding) 0;
+}
+
+.xray-tab-content-item h2 {
+	color: var(--xrayGray1);
+	margin: var(--xrayPadding) 0;
+}
+
+.xray-tab-content-item .about-text {
+	color: var(--xrayLight);
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: var(--xrayPadding) 0;
+}
+
+.xray-tab-content-item .xray-card {
+	align-items: center;
+	background-color: var(--xrayButton);
+	border-radius: 0.8em;
+	display: flex;
+	max-width: 300px;
+	padding: 1em;
+}
+
+.xray-card img {
+	border-radius: 50%;
+}
+
+.xray-card .card-text {
+	color: var(--xrayGray1);
+	font-size: 1em;
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+.xray-card-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5em;
+}
+
+@media (min-width: 1536px) {
+	.xray-card-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
