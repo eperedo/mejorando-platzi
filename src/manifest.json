@@ -19,6 +19,14 @@
 		{
 			"matches": ["https://platzi.com/clases/*"],
 			"js": ["features/tutorial-pagination/content-script.js"]
+		},
+		{
+			"matches": ["https://platzi.com/clases/*"],
+			"js": ["features/tutorial-pagination/content-script.js"]
+		},
+		{
+			"matches": ["https://platzi.com/clases/*"],
+			"js": ["features/x-ray/content-script.js"]
 		}
 	],
 	"web_accessible_resources": [
@@ -27,7 +35,8 @@
 				"static/close.svg",
 				"features/stories/*",
 				"features/light-mode/*",
-				"features/tutorial-pagination/*"
+				"features/tutorial-pagination/*",
+				"features/x-ray/*"
 			],
 			"matches": ["https://platzi.com/*"]
 		}
@@ -38,7 +47,7 @@
 		"48": "icons/48.png",
 		"128": "icons/128.png"
 	},
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Un conjunto de mejoras para platzi.com",
 	"author": "Eduardo P. Rivero <jrperedo@gmail.com> (https://blog.eperedo.com/)",
 	"homepage_url": "https://mejorando-platzi.netlify.com",
