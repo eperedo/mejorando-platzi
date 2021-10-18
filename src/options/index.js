@@ -4,6 +4,7 @@ const lightCourseDom = form.querySelector('input#enableLightMode');
 const enableStoriesProfileDom = form.querySelector(
 	'input#enableStoriesProfile',
 );
+const enableXRayDom = form.querySelector('input#enableXRay');
 
 function showMessage(text, type = 'success') {
 	document.querySelector('dialog#notify-container').open = true;
@@ -16,10 +17,11 @@ function showMessage(text, type = 'success') {
 }
 
 chrome.storage.sync.get(
-	['enableLightMode', 'enableStoriesProfile'],
+	['enableLightMode', 'enableStoriesProfile', 'enableXRay'],
 	(values) => {
 		lightCourseDom.checked = values.enableLightMode;
 		enableStoriesProfileDom.checked = values.enableStoriesProfile;
+		enableXRayDom.checked = values.enableXRay;
 		btn.removeAttribute('disabled');
 	},
 );
@@ -29,11 +31,15 @@ form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const enableLightMode = lightCourseDom.checked;
 	const enableStoriesProfile = enableStoriesProfileDom.checked;
+	const enableXRay = enableXRayDom.checked;
 	try {
-		chrome.storage.sync.set({ enableLightMode, enableStoriesProfile }, () => {
-			showMessage('Options saved!');
-			btn.removeAttribute('disabled');
-		});
+		chrome.storage.sync.set(
+			{ enableLightMode, enableStoriesProfile, enableXRay },
+			() => {
+				showMessage('Options saved!');
+				btn.removeAttribute('disabled');
+			},
+		);
 	} catch (error) {
 		showMessage(error.message, 'error');
 		throw error;
