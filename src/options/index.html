@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mejorando Platzi - Options</title>
+		<title>__MSG_optionsTitle__</title>
 		<link href="options.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -12,11 +12,11 @@
 				<div id="notification"></div>
 			</dialog>
 			<header>
-				<h1>Mejorando Platzi - Options</h1>
+				<h1 id="option-title">__MSG_optionsTitle__</h1>
 			</header>
 			<form class="form-options" id="form-options">
 				<div class="control-container">
-					<label class="control-label" for="file">Prender la luz (desactiva el modo oscuro de algunas páginas)</label>
+					<label id="optionsLightMode" class="control-label" for="file">Prender la luz (desactiva el modo oscuro de algunas páginas)</label>
 					<input
 						class="control-input"
 						id="enableLightMode"
@@ -24,7 +24,7 @@
 					/>
 				</div>
 				<div class="control-container">
-					<label class="control-label" for="file">Mostrar carreras como stories en perfil de usuario</label>
+					<label id="optionsStories" class="control-label" for="file">Mostrar carreras como stories en perfil de usuario</label>
 					<input
 						class="control-input"
 						id="enableStoriesProfile"
@@ -32,7 +32,7 @@
 					/>
 				</div>
 				<div class="control-container">
-					<label class="control-label" for="file">Activar X-RAY</label>
+					<label id="optionsXRay" class="control-label" for="file">Activar X-RAY</label>
 					<input
 						class="control-input"
 						id="enableXRay"
@@ -40,9 +40,7 @@
 					/>
 				</div>								
 				<div class="control-container">
-					<button id="btn-settings" class="btn" type="submit">
-						Save
-					</button>
+					<button id="optionsButtonSave" class="btn" type="submit"></button>
 				</div>
 			</form>
 		</section>
