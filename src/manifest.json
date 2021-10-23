@@ -1,5 +1,6 @@
 {
 	"name": "Mejorando Platzi",
+	"default_locale": "es",
 	"permissions": ["storage"],
 	"options_page": "options/index.html",
 	"content_scripts": [

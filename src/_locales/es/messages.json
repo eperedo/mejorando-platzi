@@ -1,0 +1,22 @@
+{
+	"optionsTitle": {
+		"message": "Mejorando Platzi - Opciones",
+		"description": ""
+	},
+	"optionsLightMode": {
+		"message": "Prender la luz (desactiva el modo oscuro de algunas páginas)",
+		"description": ""
+	},
+	"optionsStories": {
+		"message": "Mostrar carreras como stories en perfil de usuario",
+		"description": ""
+	},
+	"optionsXRay": {
+		"message": "Activar X-RAY",
+		"description": ""
+	},
+	"optionsButtonSave": {
+		"message": "Guardar",
+		"description": ""
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"optionsTitle": {
+		"message": "Mejorando Platzi - Options",
+		"description": ""
+	},
+	"optionsLightMode": {
+		"message": "Turns light on (disable dark mode in some pages)",
+		"description": ""
+	},
+	"optionsStories": {
+		"message": "Show approved careers as instagram stories in your profile page",
+		"description": ""
+	},
+	"optionsXRay": {
+		"message": "Enable X-RAY",
+		"description": ""
+	},
+	"optionsButtonSave": {
+		"message": "Save",
+		"description": ""
+	}
+}
