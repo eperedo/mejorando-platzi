@@ -153,11 +153,21 @@ function closeButton() {
 	}
 }
 
+function buildLoadingUi(parent) {
+	if (parent) {
+		const $el = document.createElement('div');
+		$el.setAttribute('id', 'xray-loading');
+		$el.classList.add('xray-loading');
+		$el.innerText = 'Cargando...';
+		parent.appendChild($el);
+	} else {
+		document.querySelector('div#xray-loading').remove();
+	}
+}
+
 function insertXRay(teacherInfo) {
 	const $videoContainer = document.querySelector('.MaterialVideo');
 	if ($videoContainer) {
-		document.querySelector('video').pause();
-		document.querySelector('.VideoPlayer').classList.add('VideoPlayerOpacity');
 		const $xRay = document.createElement('div');
 		$xRay.classList.add('xray-container');
 		$xRay.innerHTML = buildUi(teacherInfo);
@@ -176,15 +186,24 @@ if ($nameTeacher) {
 	$nameTeacher.addEventListener('click', async () => {
 		const $xray = document.querySelector('.xray-container');
 		if (!$xray) {
+			document.querySelector('video').pause();
+			document
+				.querySelector('.VideoPlayer')
+				.classList.add('VideoPlayerOpacity');
 			if (teachers[$nameTeacher.textContent]) {
 				insertXRay(teachers[$nameTeacher.textContent]);
 			} else {
+				const $videoContainer = document.querySelector('.MaterialVideo');
+				if ($videoContainer) {
+					buildLoadingUi($videoContainer);
+				}
 				const res = await fetch(
 					`https://platziverse.vercel.app/api/teacher.js?name=${$nameTeacher.textContent}`,
 				);
 				if (res.ok) {
 					const data = await res.json();
 					teachers[$nameTeacher.textContent] = data;
+					buildLoadingUi();
 					insertXRay(data);
 				}
 			}
