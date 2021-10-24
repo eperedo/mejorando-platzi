@@ -48,7 +48,7 @@
 		"48": "icons/48.png",
 		"128": "icons/128.png"
 	},
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Un conjunto de mejoras para platzi.com",
 	"author": "Eduardo P. Rivero <jrperedo@gmail.com> (https://blog.eperedo.com/)",
 	"homepage_url": "https://mejorando-platzi.netlify.com",
