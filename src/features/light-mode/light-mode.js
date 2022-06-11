@@ -1,6 +1,7 @@
 function invertDarkMode() {
 	const baseLayoutDom = document.querySelector('.BaseLayout');
-	if (baseLayoutDom) {
+	const newHomeSelector = document.querySelector('#home-student-new');
+	if (baseLayoutDom || newHomeSelector) {
 		styleDarkMode();
 	}
 }
