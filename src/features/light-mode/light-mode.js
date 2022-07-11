@@ -1,7 +1,6 @@
+const routes = ['home', 'cursos', 'clases', 'precios'];
 function invertDarkMode() {
-	const baseLayoutDom = document.querySelector('.BaseLayout');
-	const newHomeSelector = document.querySelector('#home-student-new');
-	if (baseLayoutDom || newHomeSelector) {
+	if (routes.some((x) => window.location.pathname.includes(x))) {
 		styleDarkMode();
 	}
 }
